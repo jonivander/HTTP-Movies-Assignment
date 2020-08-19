@@ -65,13 +65,28 @@ body {
   background-color: green;
   color: white;
 }
-
+/* 
 .home-button {
   padding: 5px 10px;
   background-color: lightskyblue;
-}
+} */
 
 .movie-warning {
   color: red;
   text-align: center;
 }
+
+Form {
+  margin: auto; 
+}
+
+.movie-card {
+  text-align: center;
+  width: 50%;
+  background-color: whitesmoke;
+  text-decoration: none;
+}
+
+/* .movie-card:hover{
+  back
+} */

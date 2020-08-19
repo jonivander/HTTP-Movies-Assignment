@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import MovieCard from "./MovieCard";
+import { Button } from 'reactstrap'; 
 
 function MovieList({ movies }) {
   return (
@@ -12,6 +13,9 @@ function MovieList({ movies }) {
           </Link>
         ))
       }
+      <Link to='/add-movie'>
+        <Button color="danger">Add Movie</Button>
+      </Link>
     </div>
   );
 }
