@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useParams, useHistory, useLocation } from 'react-router-dom';
 import axios from 'axios';
+import { Form, Input, Button } from 'reactstrap'; 
 
 function UpdateMovieForm(props) {
     const history = useHistory();
@@ -53,9 +54,9 @@ function UpdateMovieForm(props) {
     }
 
     return (
-        <form onSubmit={submitMovie}>
+        <Form onSubmit={submitMovie}>
             <label>Title:
-                <input 
+                <Input 
                     type='text'
                     name='title'
                     id='title'
@@ -66,7 +67,7 @@ function UpdateMovieForm(props) {
             </label>
 
             <label>Director:
-                <input 
+                <Input 
                     type='text'
                     name='director'
                     id='director'
@@ -77,7 +78,7 @@ function UpdateMovieForm(props) {
             </label>
 
             <label>Metascore:
-                <input 
+                <Input 
                     type='text'
                     name='metascore'
                     id='metascore'
@@ -86,8 +87,8 @@ function UpdateMovieForm(props) {
                     onChange={changeHandler}
                 />
             </label>
-            <button>Update Movie Info</button>
-        </form>
+            <Button color="warning">Update Movie Info</Button>
+        </Form>
     )
 }
 
