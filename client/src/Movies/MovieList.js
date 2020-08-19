@@ -12,6 +12,7 @@ function MovieList({ movies }) {
           </Link>
         ))
       }
+      <Link to='/add-movie'>Add Movie</Link>
     </div>
   );
 }
